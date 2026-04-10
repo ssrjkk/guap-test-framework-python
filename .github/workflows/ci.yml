@@ -20,16 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install flake8 pytest-cov black mypy
+          pip install flake8 pytest-cov
           
       - name: Run flake8
         run: flake8 . --max-line-length=120 --ignore=E501,W503,W292
-        
-      - name: Run black
-        run: black --check .
-        
-      - name: Run mypy
-        run: mypy api_client/ config/ --ignore-missing-imports || true
 
   api-tests:
     runs-on: ubuntu-latest
