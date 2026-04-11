@@ -32,7 +32,7 @@ pip install -r requirements.txt
 # Запустить тесты
 pytest api_tests -v          # API-тесты
 pytest ui_tests -v           # UI-тесты (требуется браузер)
-pytest -m smoke            # Smoke-тесты
+pytest -m smoke              # Smoke-тесты
 
 # Сгенерировать отчёт
 pytest --alluredir=allure-results
@@ -45,31 +45,31 @@ allure serve allure-results
 
 ```
 .
-├── api_client/            # HTTP-клиент с retry, логированием, таймаутами
-│   ├── base.py           # BaseApiClient
-│   ├── clients.py         # Эндпоинты: GuapApiClient
-│   └── schemas.py        # Валидация схем ответов
-├── api_tests/            # API-тесты
-│   ├── conftest.py       # Фикстуры: api_client, http_session
+├── api_client/               # HTTP-клиент с retry, логированием, таймаутами
+│   ├── base.py               # BaseApiClient
+│   ├── clients.py            # Эндпоинты: GuapApiClient
+│   └── schemas.py            # Валидация схем ответов
+├── api_tests/                # API-тесты
+│   ├── conftest.py           # Фикстуры: api_client, http_session
 │   └── test_api_clients.py
-├── ui_tests/             # UI-тесты (Selenium)
-│   ├── conftest.py       # Фикстуры: driver, page, wait
-│   ├── pages/            # Page Objects
+├── ui_tests/                 # UI-тесты (Selenium)
+│   ├── conftest.py           # Фикстуры: driver, page, wait
+│   ├── pages/                # Page Objects
 │   │   ├── base_page.py
 │   │   ├── guap_page.py
 │   │   └── metro_page.py
 │   └── test_pages.py
-├── load_tests/           # k6-скрипты для нагрузочного тестирования
+├── load_tests/                # k6-скрипты для нагрузочного тестирования
 │   ├── api_basic.js
 │   └── api_crud.js
-├── sql_tasks/            # SQL-запросы для валидации данных
+├── sql_tasks/                 # SQL-запросы для валидации данных
 │   └── guap_db_queries.sql
-├── tests_data/          # Тестовые данные и factories
+├── tests_data/                # Тестовые данные и factories
 │   └── factories.py
-├── config/               # Конфигурация из .env
+├── config/                    # Конфигурация из .env
 │   └── settings.py
-├── conftest.py          # Глобальные фикстуры
-└── .github/workflows/   # CI/CD
+├── conftest.py                # Глобальные фикстуры
+└── .github/workflows/         # CI/CD
     └── ci.yml
 ```
 
@@ -108,7 +108,7 @@ class GuapMainPage(BasePage):
 | `Selenium` | UI-автоматизация с Page Objects |
 | `k6` | Нагрузочное тестирование |
 | `Docker` | Воспроизводимое окружение |
-| `GitHub Actions` | CI/CD: lint → tests → report |
+| `GitHub Actions` | CI/CD: lint -> tests -> report |
 
 ---
 
@@ -125,9 +125,9 @@ docker run --rm qa-tests pytest ui_tests -v
 ## CI/CD
 
 GitHub Actions автоматически запускает:
-1. **lint** — flake8 проверка стиля
-2. **api-tests** — API тесты
-3. **ui-tests** — UI тесты (с автоскриншотами при падениях)
+1. **lint** - flake8 проверка стиля
+2. **api-tests** - API тесты
+3. **ui-tests** - UI тесты (с автоскриншотами при падениях)
 
 ---
 
