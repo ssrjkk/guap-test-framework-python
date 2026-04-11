@@ -21,7 +21,8 @@ def _get_bool(key: str, default: bool = False) -> bool:
 
 @dataclass
 class Config:
-    BASE_URL: str = _get_env("BASE_URL", "https://jsonplaceholder.typicode.com")
+    BASE_URL_API: str = _get_env("BASE_URL_API", "https://jsonplaceholder.typicode.com")
+    BASE_URL_UI: str = _get_env("BASE_URL_UI", "https://guap.ru")
     ENV: str = _get_env("ENV", "local")
     BROWSER: str = _get_env("BROWSER", "chrome")
 
