@@ -1,4 +1,4 @@
-# QA Automation Framework
+# Python-framework-GUAP.RU
 
 Python | pytest | Selenium | k6 | Docker
 
