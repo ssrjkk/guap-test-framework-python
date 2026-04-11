@@ -45,16 +45,16 @@ allure serve allure-results
 
 ```
 .
-├── api_client/               # HTTP-клиент с retry, логированием, таймаутами
-│   ├── base.py               # BaseApiClient
-│   ├── clients.py            # Эндпоинты: GuapApiClient
-│   └── schemas.py            # Валидация схем ответов
-├── api_tests/                # API-тесты
-│   ├── conftest.py           # Фикстуры: api_client, http_session
+├── api_client/                # HTTP-клиент с retry, логированием, таймаутами
+│   ├── base.py                # BaseApiClient
+│   ├── clients.py             # Эндпоинты: GuapApiClient
+│   └── schemas.py             # Валидация схем ответов
+├── api_tests/                 # API-тесты
+│   ├── conftest.py            # Фикстуры: api_client, http_session
 │   └── test_api_clients.py
-├── ui_tests/                 # UI-тесты (Selenium)
-│   ├── conftest.py           # Фикстуры: driver, page, wait
-│   ├── pages/                # Page Objects
+├── ui_tests/                  # UI-тесты (Selenium)
+│   ├── conftest.py            # Фикстуры: driver, page, wait
+│   ├── pages/                 # Page Objects
 │   │   ├── base_page.py
 │   │   ├── guap_page.py
 │   │   └── metro_page.py
