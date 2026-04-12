@@ -172,6 +172,5 @@ allure open allure-report
 ````
 
 ## Контакты
-
 - Telegram: @ssrjkk
 - Email: ray013lefe@gmail.com
