@@ -9,8 +9,6 @@
 ![Coverage](https://img.shields.io/badge/coverage-65%25-yellow)
 ![Tests](https://img.shields.io/badge/tests-API%2BUI%2Bload-brightgreen)
 ![Run](https://img.shields.io/badge/run-~45sec-blue)
-![Last Commit](https://img.shields.io/github/last-commit/ssrjkk/guap-test-framework-python)
-![License](https://img.shields.io/badge/license-MIT-yellow)
 
 > 30+ API/UI-тестов | ⚡ Запуск: ~30 сек | 🛡 Стабильность: 95% | 🐳 Docker-ready
 
