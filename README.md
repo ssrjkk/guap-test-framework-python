@@ -162,7 +162,7 @@ class GuapMainPage(BasePage):
 | `test:api` | каждый PR | Запуск API-тестов с `--alluredir` | `allure-results/` |
 | `test:ui` | merge to develop | UI-тесты с автоскриншотами при падениях | `screenshots/failures/` |
 | `test:load:k6` | по тегу `@load` | Нагрузочный сценарий на 50 виртуальных пользователей | `k6-report.json` |
-| `report:allure` | после тестов | Генерация HTML-отчёта | `allure-report/` → GitHub Artifact |
+| `report:allure` | после тестов | Генерация HTML-отчёта | `allure-report/` -> GitHub Artifact |
 | `notify` | merge to main | Уведомление в Telegram при падении критичных тестов | - |
 
 ### Как посмотреть отчёт
